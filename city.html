@@ -130,18 +130,6 @@
                             <span>Dalat</span>
                             <h2>Details</h2>
                         </div>
-                        <div class="why-boxes">
-                            <button class="why-box" onclick="showDetailedInfo('city');" style="border:white">
-                                <b>Food</b>
-                            </button>
-                            <button class="why-box" onclick="showDetailedInfo('people');" style="border:white">
-                                <b>Locations</b>
-                            </button>
-                            <button class="why-box" onclick="showDetailedInfo('golf');" style="border:white">
-                                <b>Golf Courses</b>
-                            </button>
-                        </div>
-                        <p id="test_id2"></p>
                     </div>
                 </div>
             </div>
@@ -151,57 +139,114 @@
 
     <!-- Start latest-blog div -->
     <div class="container">
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="single-post">
-                    <div class="author">
-                        <img src="assets/img/blog/author-1.jpg" alt="">
-                        <span>kameroon James</span>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row g-4" style="margin-bottom: 40px; margin-top: 10px;">
+                    <div class="col-md-3" style="margin-top: 10px;">
+                        <button class="why-box" onclick="showDetailedInfo('food');" style="border:white; width: 100%;">
+                            <b>Food</b>
+                        </button>
                     </div>
-                    <div class="post-thumbnail">
-                        <a href="blog-details.html"><img src="assets/img/blog/blog-1.jpg" alt=""></a>
+                    <div class="col-md-6" style="margin-top: 10px;">
+                        <button class="why-box" onclick="showDetailedInfo('golf_course');" style="border:white; width: 100%;">
+                            <b>Golf Courses</b>
+                        </button>
                     </div>
-                    <div class="news-cnt">
-                        <span>07 January, 2022</span>
-                        <h3><a href="blog-details.html">Faucibus orci luctus etenda ultrices posuere cubilia.</a></h3>
-                        <div class="view-btn">
-                            <a href="blog-details.html">View Details</a>
+                    <div class="col-md-3" style="margin-top: 10px;">
+                        <button class="why-box" onclick="showDetailedInfo('famous_location');" style="border:white; width: 100%;">
+                            <b>Locations</b>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-4">
+                        <div class="single-post">
+                            <div class="author">
+                                <img src="assets/img/blog/author-1.jpg" alt="">
+                                <span>kameroon James</span>
+                            </div>
+                            <div class="post-thumbnail">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-1.jpg" alt=""></a>
+                            </div>
+                            <div class="news-cnt">
+                                <span>07 January, 2022</span>
+                                <h3 id="paragraph_1"><a href="blog-details.html">
+                                    Faucibus orci luctus etenda ultrices posuere cubilia.
+                                </a></h3>
+                                <div class="view-btn">
+                                    <a href="blog-details.html">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="single-post">
+                            <div class="author">
+                                <img src="assets/img/blog/author-2.png" alt="">
+                                <span>Alen Cooper</span>
+                            </div>
+                            <div class="post-thumbnail">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-2.jpg" alt=""></a>
+                            </div>
+                            <div class="news-cnt">
+                                <span>08 January, 2022</span>
+                                <h3 id="paragraph_2"><a href="blog-details.html">Elementum id est Curabituri et tortor molestie.</a></h3>
+                                <div class="view-btn">
+                                    <a href="blog-details.html">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="single-post">
+                            <div class="author">
+                                <img src="assets/img/blog/author-3.jpg" alt="">
+                                <span>Elen Woker</span>
+                            </div>
+                            <div class="post-thumbnail">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-3.jpg" alt=""></a>
+                            </div>
+                            <div class="news-cnt">
+                                <span>09 January, 2022</span>
+                                <h3 id="paragraph_3"><a href="blog-details.html">Cras non auctor elit rutrum Suspendisse ultrices.</a></h3>
+                                <div class="view-btn">
+                                    <a href="blog-details.html">View Details</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="single-post">
-                    <div class="author">
-                        <img src="assets/img/blog/author-2.png" alt="">
-                        <span>Alen Cooper</span>
-                    </div>
-                    <div class="post-thumbnail">
-                        <a href="blog-details.html"><img src="assets/img/blog/blog-2.jpg" alt=""></a>
-                    </div>
-                    <div class="news-cnt">
-                        <span>08 January, 2022</span>
-                        <h3><a href="blog-details.html">Elementum id est Curabituri et tortor molestie.</a></h3>
-                        <div class="view-btn">
-                            <a href="blog-details.html">View Details</a>
+
+            <div class="col-md-4" style="margin-top: 20px;">
+                <div class="sidebar-widget">
+                    <h4>Related Articles</h4>
+                    <div class="blog-post">
+                        <div class="post-thumb">
+                            <a href="blog-details.html"><img src="assets/img/post-1.jpg" alt=""></a>
+                        </div>
+                        <div class="post-cnt">
+                            <h5 id="article_1"><a href="blog-details.html">Faucibus orci luctus Su etenda ultrices.</a></h5>
+                            <span><i class="bi bi-calendar3"></i> 09 January, 2022</span>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="single-post">
-                    <div class="author">
-                        <img src="assets/img/blog/author-3.jpg" alt="">
-                        <span>Elen Woker</span>
+                    <div class="blog-post">
+                        <div class="post-thumb">
+                            <a href="blog-details.html"><img src="assets/img/post-2.jpg" alt=""></a>
+                        </div>
+                        <div class="post-cnt">
+                            <h5 id="article_2"><a href="blog-details.html">Our golf club are desig and maintained.</a></h5>
+                            <span><i class="bi bi-calendar3"></i> 10 January, 2022</span>
+                        </div>
                     </div>
-                    <div class="post-thumbnail">
-                        <a href="blog-details.html"><img src="assets/img/blog/blog-3.jpg" alt=""></a>
-                    </div>
-                    <div class="news-cnt">
-                        <span>09 January, 2022</span>
-                        <h3><a href="blog-details.html">Cras non auctor elit rutrum Suspendisse ultrices.</a></h3>
-                        <div class="view-btn">
-                            <a href="blog-details.html">View Details</a>
+                    <div class="blog-post">
+                        <div class="post-thumb">
+                            <a href="blog-details.html"><img src="assets/img/post-3.jpg" alt=""></a>
+                        </div>
+                        <div class="post-cnt">
+                            <h5 id="article_3"><a href="blog-details.html">The highest golf stand with state art.</a></h5>
+                            <span><i class="bi bi-calendar3"></i> 11 January, 2022</span>
                         </div>
                     </div>
                 </div>
@@ -383,11 +428,51 @@
                 var content = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.";
             }
 
-            document.getElementById('info').innerHTML = content
+            document.getElementById('info').innerHTML = content;
         }
 
-        function showDetailedInfo(){
+        function showDetailedInfo(details_type){
+            var paragraph_1 = "Hello world";
+            var paragraph_2 = "Hello world";
+            var paragraph_3 = "Hello world";
 
+            var article_1 = "";
+            var article_2 = "";
+            var article_3 = "";
+
+            if (details_type == 'food'){
+                paragraph_1 = "Dalat city in Vietnam is known for its fresh and high-quality produce, such as vegetables, fruits, and flowers.";
+                paragraph_2 = "The cuisine in Dalat is a fusion of Vietnamese and French influences, offering a unique blend of flavors.";
+                paragraph_3 = "Dalat is also famous for its coffee and tea plantations, which produce some of the best coffee and tea in.";
+            
+                article_1 = "which are used to create delicious and healthy dishes.";
+                article_2 = "and culinary styles that are sure to delight any food lover.";
+                article_3 = "the world, making it a great destination for those who enjoy a good cup of brew.";
+            }
+            else if (details_type == 'famous_location'){
+                paragraph_1 = "The Xuan Huong Lake is a picturesque and tranquil spot in Dalat, where visitors can enjoy a relaxing.";
+                paragraph_2 = "The Crazy House is a unique and eccentric architectural wonder in Dalat, designed by a local artist, which.";
+                paragraph_3 = "The Lang Biang Mountain is the highest peak in Dalat, offering breathtaking panoramic views of the city";
+            
+                article_1 = "stroll or a boat ride while taking in the stunning views of the surrounding mountains.";
+                article_2 = "features a maze-like structure with intricate and playful details, making it a popular attraction for tourists.";
+                article_3 = "and its surroundings. It is a popular destination for hiking and trekking enthusiasts who are looking for an adventure.";
+            }
+            else if (details_type == 'golf_course'){
+                paragraph_1 = "The golf courses in Dalat city are set amidst stunning natural landscapes, with rolling hills, lush green.";
+                paragraph_2 = "The courses are designed by world-renowned architects and offer a variety of challenges for golfers of all.";
+                paragraph_3 = "Many of the golf courses in Dalat city are located near luxury resorts and hotels, offering golfers the";
+            
+                article_1 = "forests, and fresh mountain air, providing a unique and refreshing golfing experience.";
+                article_2 = "levels, from beginners to professionals, with well-maintained fairways, greens, and bunkers.";
+                article_3 = "opportunity to combine their passion for the sport with a relaxing and indulgent vacation experience.";
+            }
+            document.getElementById('paragraph_1').innerHTML = paragraph_1;
+            document.getElementById('article_1').innerHTML = article_1;
+            document.getElementById('paragraph_2').innerHTML = paragraph_2;
+            document.getElementById('article_2').innerHTML = article_2;
+            document.getElementById('paragraph_3').innerHTML = paragraph_3;
+            document.getElementById('article_3').innerHTML = article_3;
         }
     </script>
 </body>
