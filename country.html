@@ -79,7 +79,7 @@
                         <div class="container" style="padding: 0px;">
                             <div class="feature">
                                 <div class="row g-4">
-                                    <div class="ib-effect-style10">
+                                    <div class="ib-effect-style10" onclick="goToUrl()">
                                         <img src="assets/img/country/Thailand-Destination-Golf.jpg" style="opacity: 0.7;">
                                         <div class="feature-child">
                                             <div class="feature-child-title">
@@ -522,6 +522,10 @@
         $(document).ready(function() {
             $('#header-content').load('./header-menu.html');
         });
+
+        function goToUrl(){
+            window.location.href = "country-detail.html";
+        }
     </script>
 
 </body>
