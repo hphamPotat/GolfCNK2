@@ -1481,6 +1481,116 @@ header.header-two .main-nav ul li ul.sub-menu {
   z-index: -1;
 }
 
+.feature-area-country:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #344E41;
+  opacity: 0.65;
+  z-index: -1;
+}
+
+.feature-area-country {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.feature-child{
+  padding: 15px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 700ms ease-out;
+  -moz-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  -ms-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+}
+
+.feature-child::before{
+  position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity .35s,-webkit-transform .35s;
+    transition: opacity .35s,-webkit-transform .35s;
+    transition: opacity .35s,transform .35s;
+    transition: opacity .35s,transform .35s,-webkit-transform .35s;
+}
+
+.feature-child-title {
+  font-weight: bold; 
+  color: #fff;
+  padding: 75px 0 0;
+  text-align: center;
+}
+
+.feature-child-title h2 {
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.feature-child-title p {
+  color: #fff;
+  text-align: center;
+}
+
+.feature-child-content {
+  font-size: 31px;
+  padding: 20px 45px;
+  transform: translate3d(0,20px,0);
+  line-height: 1.6em;
+}
+
+.feature-child-content p {
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.ib-effect-style10:hover .feature-child::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ib-effect-style10:hover .feature-child-title h2{
+  padding: 20px 0 0;
+  transform: scale(1);
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+}
+
+.ib-effect-style10:hover .feature-child-content p{
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+}
+
+.feature-child::before{
+  border: 1px solid #fff;
+}
+
 .single-feature {
   position: relative;
   border-radius: 16px;
